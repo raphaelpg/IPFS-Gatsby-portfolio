@@ -40,7 +40,7 @@ export const projectsData = [
     info2: 'Deployment has been made with Fleek.',
     info3: 'Solo project.',
     info4: '',
-    url: 'https://rough-cake-0223.on.fleek.co/',
+    url: 'https://divine-dawn-0363.on.fleek.co/',
     repo: 'https://github.com/raphaelpg/IPFS-Gatsby-portfolio',
     stack: [
       'gatsby',
