@@ -41,7 +41,7 @@ export const projectsData = [
     info3: 'Solo project.',
     info4: '',
     url: 'https://rough-cake-0223.on.fleek.co/',
-    repo: 'https://github.com/raphaelpg/IPFS-portfolio',
+    repo: 'https://github.com/raphaelpg/IPFS-Gatsby-portfolio',
     stack: [
       'gatsby',
       'react',
