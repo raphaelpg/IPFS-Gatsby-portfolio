@@ -36,8 +36,7 @@ const Projects = () => {
                       <div className="App-project-description">
                         {info || ''}<br />
                         {info2 || ''}<br />
-                        {info3 || ''}
-                        {info4 || ''}
+                        {info3 && info4 ? (info3,"\n",(info4 || '')) : (info3 || '')}
                       </div>
                       {url && (
                         <a

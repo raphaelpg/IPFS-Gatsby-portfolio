@@ -14,13 +14,16 @@ export const stackLogos = {
   heroku: ['heroku.jpeg', 'https://www.heroku.com/'],
   highcharts: ['highcharts.jpeg', 'https://www.highcharts.com/'],
   html: ['html.svg', 'https://developer.mozilla.org/en-US/docs/Web/HTML'],
+  ionos: ['ionos_logo.svg', 'https://www.ionos.com/'],
   ipfs: ['ipfs.jpeg', 'https://ipfs.io/'],
   javascript: ['javascript.svg', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'],
   jquery: ['jquery.svg', 'https://api.jquery.com/'],
   linkedin: ['linkedin.jpeg', 'https://www.linkedin.com/in/raphael-pinto-gregorio-660b2579/'],
   mongo: ['mongo.svg', 'https://www.mongodb.com/2'],
+  nginx: ['nginx_logo.svg', 'https://nginx.org/en/docs/'],
   node: ['node.svg', 'https://nodejs.org/en/'],
   php: ['php.svg', 'https://www.php.net/'],
+  pm2: ['pm2.jpeg', 'https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/'],
   react: ['react.jpeg', 'https://reactjs.org/docs/getting-started.html'],
   sass: ['sass.svg', 'https://sass-lang.com/documentation'],
   solidity: ['solidity.jpeg', 'https://docs.soliditylang.org/en/latest/'],
@@ -32,6 +35,41 @@ export const stackLogos = {
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: '10',
+    img: 'irrigate-prod.jpeg',
+    title: 'Irrigate-app front end',
+    info: 'Front end of the production version of Irrigate, the platform to gather all NGO\'s and associations accross the world allowing users to send donations from anywhere to everywhere using DAI currency.',
+    info2: 'The client is a static website made with Gatsby and deployed on IPFS through Fleek, desktop only for the moment.',
+    info3: 'It is currently work-in-progress.',
+    info4: 'Solo project.',
+    url: 'https://autumn-queen-5530.on.fleek.co/',
+    repo: 'https://github.com/raphaelpg/irrigate-prod-client',
+    stack: [
+      'gatsby',
+      'react',
+      'sass',
+      'ipfs',
+      'fleek',
+    ]
+  },
+  {
+    id: '9',
+    img: 'irrigate-prod.jpeg',
+    title: 'Irrigate-app back end',
+    info: 'Back end of the production version of Irrigate, the platform to gather all NGO\'s and associations accross the world allowing users to send donations from anywhere to everywhere using DAI currency.',
+    info2: 'The server is hosted on Ionos 1&1 and serves data as an API from a MongoDb Atlas database.',
+    info3: 'Current status is work in progress.',
+    info4: 'Solo project.',
+    repo: 'https://github.com/raphaelpg/irrigate-prod-server',
+    stack: [
+      'node',
+      'nginx',
+      'pm2',
+      'ionos',
+      'mongo',
+    ]
+  },
   {
     id: '8',
     img: 'ipfs-portfolio.jpeg',
@@ -74,7 +112,7 @@ export const projectsData = [
   {
     id: '6',
     img: 'irrigate-screenshot.jpeg',
-    title: 'Irrigate',
+    title: 'Irrigate-x-Aave Prototype',
     info: 'Hackathon POC: A platform to gather all NGO\'s and associations accross the world allowing users to send donations from anywhere to everywhere using DAI currency.',
     info2: 'It integrates Aave Lending Pool protocol allowing donations to be staked and generate interests to cover the transactions and maintenance costs.',
     info3: 'Solo project hosted on Heroku and deployed on Ropsten testnet.',

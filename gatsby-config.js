@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Raphael Pinto Gregorio portfolio`,
+    title: `Raphael Pinto Gregorio's portfolio`,
     description: `Raphael Pinto Gregorio Full Stack JavaScript developer portfolio.`,
     author: `Raphael Pinto Gregorio`,
   },

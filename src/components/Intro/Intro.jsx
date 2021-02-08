@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
+import { Link } from 'react-scroll'
 
 const Intro = () => {
 	return (
