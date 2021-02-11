@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 import { Link } from 'react-scroll'
+import { UserContext } from '../../context/UserContext'
 
 const Intro = () => {
+	const { resume } = useContext(UserContext)
+
 	return (
 		<div className="App-intro">
 			<Fade left duration={1000} delay={500} distance="30px">
@@ -21,7 +24,7 @@ const Intro = () => {
 	        <Link to="contact" smooth duration={1000}>
 	          <div className="App-intro-menu-item-2" >Contact</div>
 	        </Link>
-          <a className="App-intro-menu-item-3" href="https://raw.githubusercontent.com/raphaelpg/resume/master/Raphael_Pinto_JS_Full_Stack.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="App-intro-menu-item-3" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
 				</div>
 			</Fade>
 	  </div>

@@ -1,3 +1,6 @@
+//RESUME URL
+export const resumeUrl = "https://raw.githubusercontent.com/raphaelpg/resume/master/Raphael_Pinto_Full_Stack_JS.pdf"
+
 // LOGO DATA
 export const stackLogos = {
   aave: ['aave.svg', 'https://aave.com/'],

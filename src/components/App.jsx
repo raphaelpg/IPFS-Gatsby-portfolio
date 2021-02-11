@@ -4,19 +4,21 @@ import Intro from './Intro/Intro'
 import Footer from './Footer/Footer'
 import Projects from './Projects/Projects'
 
-import { stackLogos, projectsData } from '../data/data.js'
+import { resumeUrl, stackLogos, projectsData } from '../data/data.js'
 
 const App = () => {
-	const [projects, setProjects] = useState([])
+	const [resume, setResume] = useState([])
 	const [logos, setLogos] = useState([])
+	const [projects, setProjects] = useState([])
 
 	useEffect(() => {
-		setProjects([...projectsData])
+		setResume(resumeUrl)
 		setLogos(stackLogos)
+		setProjects([...projectsData])
 	}, [])
 
 	return (
-		<UserContext.Provider value={{ projects, logos }}>
+		<UserContext.Provider value={{ resume, logos, projects }}>
 			<Intro />
 			<Projects	/>
 			<Footer />
