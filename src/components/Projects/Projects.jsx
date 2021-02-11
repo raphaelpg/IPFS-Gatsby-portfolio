@@ -20,7 +20,7 @@ const Projects = () => {
       </Link>
 			<div className='App-project-list'>
 				{projects.map(project => {
-					const {id, title, info, info2, info3, info4, url, repo, img, stack } = project;
+          const {id, title, description, url, repo, img, stack } = project;
 
 					return(
 						<div key={id} className="App-project">
@@ -33,11 +33,9 @@ const Projects = () => {
                 <div className="App-project-right-container">
                   <div className="App-project-right-top-container">
                     <div className="App-project-description-container">
-                      <div className="App-project-description">
-                        {info || ''}<br />
-                        {info2 || ''}<br />
-                        {info3 && info4 ? (info3,"\n",(info4 || '')) : (info3 || '')}
-                      </div>
+                      <ul className="App-project-description">
+                        {description ? description.map((item, index) => item ? <li key={index}>{item}</li> : '') : ''}
+                      </ul>
                       {url && (
                         <a
                           className="App-project-link" 
