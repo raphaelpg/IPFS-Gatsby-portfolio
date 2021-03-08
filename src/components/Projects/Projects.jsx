@@ -43,7 +43,7 @@ const Projects = () => {
                           target="_blank" 
                           rel="noopener noreferrer"
                         >
-                        Deployed project
+                        See
                         </a>
                       )}
                       {repo && ( 
